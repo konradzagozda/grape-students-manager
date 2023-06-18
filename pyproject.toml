@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "grape-students-manager"
+version = "0.1.0"
+description = ""
+authors = ["Konrad Zagozda <konrad.zagozda@grapeup.com>"]
+readme = "README.md"
+packages = [{include = "grape_students_manager"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "1.1.4"
+flask-sqlalchemy = "2.5.1"
+flask-restx = "^1.1.0"
+psycopg2 = "^2.9.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
