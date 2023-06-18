@@ -18,6 +18,7 @@ sqlalchemy = "^1.4"
 [tool.poetry.group.test.dependencies]
 pytest = "^7.3.2"
 pytest-flask = "^1.2.0"
+requests = "^2.31.0"
 
 [build-system]
 requires = ["poetry-core"]
