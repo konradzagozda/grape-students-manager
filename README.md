@@ -11,6 +11,6 @@ while `docker compose up` is up
 
 ```sh
 docker compose exec -it web /bin/bash
-pytest ./src
-pytest ./integration
+cd src && python -m pytest
+cd integration && python -m pytest
 ```
