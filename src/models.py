@@ -1,5 +1,7 @@
+from flask_sqlalchemy import SQLAlchemy
 from uuid import uuid4
-from database import db
+
+db = SQLAlchemy()
 
 class Student(db.Model):
     id = db.Column(db.String(36), primary_key=True, default=lambda: str(uuid4()))
